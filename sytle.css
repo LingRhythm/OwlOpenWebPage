@@ -484,7 +484,7 @@ html{
 .d{
     text-decoration: none;
     color: rgb(255, 165, 30);
-    font: 500 30px '';
+    font: 200 15px '';
     line-height: 100px;
     opacity: 0;
     transition: .3s;
