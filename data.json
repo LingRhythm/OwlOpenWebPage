@@ -1,0 +1,119 @@
+{
+  "games": [
+    {
+      "title": "雪夜梦行",
+      "desc": "2d平台跳跃解谜游戏",
+      "engine": "Godot",
+      "year": "2025",
+      "team": "赤瞳",
+      "link": "1111",
+      "color": "neon-cyan",
+      "bgText": "000000",
+      "imgColor": "00f3ff"
+    },
+    {
+      "title": "助你好死",
+      "desc": "2d视觉解谜游戏",
+      "engine": "Unity",
+      "year": "2025",
+      "team": "赤瞳",
+      "link": "",
+      "color": "neon-purple",
+      "bgText": "000000",
+      "imgColor": "b026ff"
+    },
+    {
+      "title": "笨蛋魔女",
+      "desc": "2d俯视角类吸血鬼幸存者游戏",
+      "engine": "Unreal",
+      "year": "2025",
+      "team": "赤瞳",
+      "link": "",
+      "color": "neon-red",
+      "bgText": "000000",
+      "imgColor": "ff2a2a"
+    },
+    {
+      "title": "墨守天工",
+      "desc": "俯视角塔防游戏",
+      "engine": "Godot",
+      "year": "2025",
+      "team": "赤瞳，灯下烟尘，坚果墙，布洛芬，阿潇",
+      "link": "",
+      "color": "neon-green",
+      "bgText": "000000",
+      "imgColor": "39ff14"
+    },
+    {
+      "title": "火戏",
+      "desc": "模拟经营游戏",
+      "engine": "Unity",
+      "year": "2025",
+      "team": "阿龙，泡泡，翳念无思，鱼鳍，风",
+      "link": "",
+      "color": "neon-yellow",
+      "bgText": "000000",
+      "imgColor": "ffeb3b"
+    },
+    {
+      "title": "ForTwo42",
+      "desc": "2d闯关游戏",
+      "engine": "Unity",
+      "year": "2025",
+      "team": "谬,宅久,与校外队员平鱼,某人,尘迷,bilibili",
+      "link": "",
+      "color": "neon-pink",
+      "bgText": "000000",
+      "imgColor": "ff00ff"
+    },
+    {
+      "title": "解忧杂货铺",
+      "desc": "视觉小说游戏",
+      "engine": "Unity",
+      "year": "2023",
+      "team": "才不是菜菜子,灯下烟尘,宅久,Wim未末,MIDNIGHTA",
+      "link": "",
+      "color": "white",
+      "bgText": "000000",
+      "imgColor": "cccccc"
+    }
+  ],
+  "resources": [
+    {
+      "title": "Blender 快速建模技巧",
+      "category": "VIDEO",
+      "desc": "30分钟学会低多边形角色建模。",
+      "link": "",
+      "color": "neon-purple"
+    }
+  ],
+  "blogPosts": [
+    {
+      "id": 0,
+      "title": "Shader 魔法：如何制作全息投影效果",
+      "author": "",
+      "date": "2025.03.15",
+      "category": "TECH ART",
+      "summary": "详细拆解赛博朋克风格全息广告牌的 Shader 实现思路，包括扫描线、噪点和边缘发光。",
+      "content": "<div class=\"article-body\"><p class=\"text-xl text-white font-bold mb-4\">引言</p><p>在赛博朋克游戏中，全息投影是不可或缺的视觉元素。今天我们来看看如何在 Unity Shader Graph 中从零实现这个效果。</p><h3>1. 核心原理</h3><p>全息效果的核心由三个部分组成：<code>菲涅尔边缘光 (Fresnel)</code>、<code>扫描线 (Scanlines)</code> 以及 <code>抖动干扰 (Glitch)</code>。</p><h3>2. 实现扫描线</h3><p>我们可以使用世界坐标的 Y 轴分量结合 Time 变量来制作移动的条纹。</p><p><code>float scanline = sin(input.worldPos.y * 50.0 + _Time.y * 5.0);</code></p><h3>3. 添加透明度抖动</h3><p>为了让全息投影看起来不稳定，我们需要给 Alpha 通道增加一些随机噪声。使用 Simple Noise 节点并将其与 Time 相乘即可。</p><h3>4. 总结</h3><p>通过组合上述节点，并将最终颜色设置为 HDR 颜色（高强度），配合 Bloom 后处理效果，你就能得到完美的赛博朋克全息投影了。</p></div>"
+    },
+    {
+      "id": 0,
+      "title": "独立开发者的心理健康指南",
+      "author": "",
+      "date": "2025.02.28",
+      "category": "LIFESTYLE",
+      "summary": "在长期独自开发中如何保持动力，避免倦怠（Burnout）？这里有 5 个实用建议。",
+      "content": "<div class=\"article-body\"><p>独自开发一款游戏是一场马拉松，而不是短跑。很多开发者在项目中途因为心理压力而放弃。</p><h3>1. 设定小目标</h3><p>不要只盯着最终发售日。将任务拆解为每天可以完成的小块（Micro-tasks）。</p><h3>2. 拥抱'足够好'</h3><p>完美主义是完成项目的最大敌人。先完成核心玩法，再打磨美术。</p><h3>3. 社交与反馈</h3><p>尽早展示你的游戏。加入像我们这样的社区，获得反馈不仅能改进游戏，还能让你感到被支持。</p></div>"
+    },
+    {
+      "id": 0,
+      "title": "Godot 4.0 vs Unity: 如何选择？",
+      "author": "",
+      "date": "2024.12.10",
+      "category": "OPINION",
+      "summary": "随着 Godot 4.0 的发布，很多独立开发者开始动摇。本文深度对比两者的优劣势。",
+      "content": "<div class=\"article-body\"><p>Godot 4.0 带来了全新的渲染器和更好的 GDScript 性能，但它真的能取代 Unity 吗？</p><h3>Unity 的优势</h3><p>庞大的资产商店、成熟的主机支持、海量的教程资源。</p><h3>Godot 的优势</h3><p>完全开源免费、极其轻量级（<100MB）、节点系统直观。</p><h3>结论</h3><p>如果你做 2D 游戏或者不喜欢等待编译，Godot 是绝佳选择。如果你需要做高画质 3D 或发布到主机，Unity 依然是王者。</p></div>"
+    }
+  ]
+}
